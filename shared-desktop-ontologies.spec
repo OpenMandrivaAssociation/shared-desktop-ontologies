@@ -1,7 +1,7 @@
 Summary:    Semantic web to the desktop in terms of vocabulary
 Name:	  	shared-desktop-ontologies
 Version:	0.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	BSD
 Group:		System/Base 
 Source0: 	%name-%version.tar.bz2
@@ -30,6 +30,7 @@ or Strigi.
 %package devel
 Summary: Devel stuff for %name
 Group: Development/KDE and Qt
+Requires: %name
 
 %description  devel
 This package contains header files needed if you wish to build applications
