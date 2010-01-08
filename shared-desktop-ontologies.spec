@@ -1,7 +1,7 @@
 Summary:    Semantic web to the desktop in terms of vocabulary
 Name:	  	shared-desktop-ontologies
-Version:	0.1
-Release:	%mkrel 2
+Version:	0.2
+Release:	%mkrel 1
 License:	BSD
 Group:		System/Base 
 Source0: 	%name-%version.tar.bz2
@@ -50,10 +50,10 @@ based on %name.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %buildroot
 %makeinstall_std -C build
 
 %find_lang %name
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %buildroot
