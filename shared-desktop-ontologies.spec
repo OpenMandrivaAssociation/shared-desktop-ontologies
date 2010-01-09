@@ -5,6 +5,7 @@ Release:	%mkrel 1
 License:	BSD
 Group:		System/Base 
 Source0: 	%name-%version.tar.bz2
+Patch0:     shared-desktop-ontologies-0.2-define-Version.patch
 URL:		http://sourceforge.net/projects/oscaf/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: kde4-macros
@@ -39,11 +40,13 @@ based on %name.
 %files devel
 %defattr(-,root,root)
 %_kde_datadir/pkgconfig/shared-desktop-ontologies.pc
+%_kde_datadir/cmake/SharedDesktopOntologies
 
 #--------------------------------------------------------------------
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %cmake_kde4
