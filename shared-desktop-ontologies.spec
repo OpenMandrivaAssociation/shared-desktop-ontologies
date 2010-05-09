@@ -1,6 +1,6 @@
 Summary:    Semantic web to the desktop in terms of vocabulary
 Name:	  	shared-desktop-ontologies
-Version:	0.2
+Version:	0.5
 Release:	%mkrel 1
 License:	BSD
 Group:		System/Base 
