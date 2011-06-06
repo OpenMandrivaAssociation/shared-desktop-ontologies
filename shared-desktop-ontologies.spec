@@ -1,13 +1,12 @@
 Summary:    Semantic web to the desktop in terms of vocabulary
 Name:	  	shared-desktop-ontologies
-Version:	0.5
-Release:	%mkrel 3
+Version:	0.7.0
+Release:	1
 License:	BSD
 Group:		System/Base 
 Source0: 	%name-%version.tar.bz2
 Patch0:     shared-desktop-ontologies-0.2-define-Version.patch
 URL:		http://sourceforge.net/projects/oscaf/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: kde4-macros
 BuildArch:     noarch
 
@@ -23,7 +22,6 @@ and RDFS as well as the Nepomuk ontologies which are used by projects like KDE
 or Strigi.
 
 %files
-%defattr(-,root,root)
 %_kde_datadir/ontology
 
 #--------------------------------------------------------------------
@@ -38,7 +36,6 @@ This package contains header files needed if you wish to build applications
 based on %name.
 
 %files devel
-%defattr(-,root,root)
 %_kde_datadir/pkgconfig/shared-desktop-ontologies.pc
 %_kde_datadir/cmake/SharedDesktopOntologies
 
@@ -53,10 +50,6 @@ based on %name.
 %make
 
 %install
-rm -rf %buildroot
 %makeinstall_std -C build
 
 %find_lang %name
-
-%clean
-rm -rf %buildroot
