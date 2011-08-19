@@ -1,11 +1,10 @@
 Summary:    Semantic web to the desktop in terms of vocabulary
 Name:	  	shared-desktop-ontologies
-Version:	0.7.0
-Release:	1
+Version:	0.7.52
+Release:	2
 License:	BSD
 Group:		System/Base 
 Source0: 	%name-%version.tar.bz2
-Patch0:     shared-desktop-ontologies-0.2-define-Version.patch
 URL:		http://sourceforge.net/projects/oscaf/
 BuildRequires: kde4-macros
 BuildArch:     noarch
@@ -43,7 +42,6 @@ based on %name.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %cmake_kde4
