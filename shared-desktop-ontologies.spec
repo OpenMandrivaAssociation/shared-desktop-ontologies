@@ -1,7 +1,7 @@
 Summary:	Semantic web to the desktop in terms of vocabulary
 Name:		shared-desktop-ontologies
 Version:	0.11.0
-Release:	9
+Release:	10
 License:	BSD
 Group:		System/Base
 Url:		http://sourceforge.net/projects/oscaf/
