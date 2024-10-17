@@ -4,7 +4,7 @@ Version:	0.11.0
 Release:	13
 License:	BSD
 Group:		System/Base
-Url:		http://sourceforge.net/projects/oscaf/
+Url:		https://sourceforge.net/projects/oscaf/
 Source0:	http://sourceforge.net/projects/oscaf/files/%{name}/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	kde4-macros
 BuildArch:	noarch
